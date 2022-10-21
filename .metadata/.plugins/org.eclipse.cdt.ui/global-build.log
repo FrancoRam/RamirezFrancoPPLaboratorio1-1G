@@ -1,0 +1,8 @@
+01:36:14 **** Rebuild of configuration Debug for project ABM 1aM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\bibliotecaAbm.o" "..\\src\\bibliotecaAbm.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM1M.o" "..\\src\\ABM1M.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\carrera.o" "..\\src\\carrera.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionesBasic1.o" "..\\src\\funcionesBasic1.c" 
+gcc -o "ABM 1aM.exe" "src\\ABM1M.o" "src\\bibliotecaAbm.o" "src\\carrera.o" "src\\funcionesBasic1.o" 
+Info: Nothing to build for ABM 1aM
