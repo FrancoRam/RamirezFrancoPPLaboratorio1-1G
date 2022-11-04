@@ -1,8 +1,118 @@
-01:50:46 **** Rebuild of configuration Debug for project ABM 1aM2 ****
+00:33:18 **** Incremental Build of configuration Debug for project ABM ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcionesBasic1.o" "..\\src\\funcionesBasic1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\bibliotecaAbm.o" "..\\src\\bibliotecaAbm.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABM1M.o" "..\\src\\ABM1M.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\carrera.o" "..\\src\\carrera.c" 
-gcc -o "ABM 1aM2.exe" "src\\ABM1M.o" "src\\bibliotecaAbm.o" "src\\carrera.o" "src\\funcionesBasic1.o" 
-Info: Nothing to build for ABM 1aM2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+Info: Nothing to build for ABM
+00:33:59 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+00:43:41 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:301:15: warning: implicit declaration of function 'toLower' [-Wimplicit-function-declaration]
+        seguir=toLower(gets(&seguir));
+               ^~~~~~~
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+src\Avion.o: In function `modificarAvion':
+C:\Users\Franc\RamirezFrancoPPLaboratorio1-1G\ABM\Debug/../src/Avion.c:301: undefined reference to `toLower'
+collect2.exe: error: ld returned 1 exit status
+00:44:04 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:301:15: warning: implicit declaration of function 'toLower' [-Wimplicit-function-declaration]
+        seguir=toLower(gets(seguir));
+               ^~~~~~~
+..\src\Avion.c:301:28: warning: passing argument 1 of 'gets' makes pointer from integer without a cast [-Wint-conversion]
+        seguir=toLower(gets(seguir));
+                            ^~~~~~
+In file included from ..\src\Avion.c:10:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+src\Avion.o: In function `modificarAvion':
+C:\Users\Franc\RamirezFrancoPPLaboratorio1-1G\ABM\Debug/../src/Avion.c:301: undefined reference to `toLower'
+collect2.exe: error: ld returned 1 exit status
+00:44:42 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:301:15: warning: implicit declaration of function 'toLower' [-Wimplicit-function-declaration]
+        seguir=toLower(gets(&seguir));
+               ^~~~~~~
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+src\Avion.o: In function `modificarAvion':
+C:\Users\Franc\RamirezFrancoPPLaboratorio1-1G\ABM\Debug/../src/Avion.c:301: undefined reference to `toLower'
+collect2.exe: error: ld returned 1 exit status
+00:53:16 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:301:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        seguir=(gets(&seguir));
+              ^
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+00:53:29 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:301:21: warning: passing argument 1 of 'gets' makes pointer from integer without a cast [-Wint-conversion]
+        seguir=(gets(seguir));
+                     ^~~~~~
+In file included from ..\src\Avion.c:10:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\src\Avion.c:301:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        seguir=(gets(seguir));
+              ^
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+00:53:37 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:301:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        seguir=(gets(&seguir));
+              ^
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+00:54:29 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:302:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        seguir=(gets(&seguir));
+              ^
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+00:54:41 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+01:06:29 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:294:37: error: assignment to expression with array type
+        tipos[indice].descripcionTipo=auxTipo;
+                                     ^
+01:07:00 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:294:13: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+        tipos=auxTipo;
+             ^
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
+01:07:13 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+..\src\Avion.c: In function 'modificarAvion':
+..\src\Avion.c:294:14: error: incompatible types when assigning to type 'eTipo {aka struct <anonymous>}' from type 'char *'
+        *tipos=auxTipo;
+              ^
+01:09:01 **** Incremental Build of configuration Debug for project ABM ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Avion.o" "..\\src\\Avion.c" 
+gcc -o ABM.exe "src\\ABM.o" "src\\Avion.o" "src\\aerolineas.o" "src\\biblioteca.o" "src\\carrera.o" "src\\destinos.o" "src\\funcionesBasic1.o" "src\\tipos.o" 
